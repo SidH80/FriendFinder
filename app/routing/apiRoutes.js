@@ -23,7 +23,7 @@ module.exports = function(app) {
       return parseInt(item, 10);
     });
 
-    let sum = b.reduce((a, b) => a + b, 0);
+    let arrSummed = b.reduce((a, b) => a + b, 0);
 
     for (let i = 0; i < friends.length; i++) {
       console.log(friends[i].name);
@@ -32,7 +32,7 @@ module.exports = function(app) {
       console.log("Best match friend diff " + matchedFriend.friendDifference);
       let bfriendScore = friends[i].scores.reduce((a, b) => a + b, 0);
       console.log("Total friend score " + bfriendScore);
-      totalDiff += Math.abs(sum - bfriendScore);
+      totalDiff += Math.abs(arrSummed - bfriendScore);
       console.log("-------------------------> " + totalDiff);
 
       if (totalDiff <= matchedFriend.friendDifference) {

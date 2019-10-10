@@ -16,6 +16,7 @@ module.exports = function(app) {
       friendDifference: 50
     };
 
+    //userData catches info posted on client-side into a variable
     let userData = req.body;
     let userName = userData.name;
     let userScores = userData.scores;

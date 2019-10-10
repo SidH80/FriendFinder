@@ -1,0 +1,26 @@
+body {
+    background-color: rgba(80, 169, 183, 0.452);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.jumbotron {
+    background-color: #FED766
+}
+
+.header {
+    background-color: rgba(172, 182, 183, 0.247);
+}
+
+.about-you {
+    background-color: rgba(172, 182, 183, 0.247);
+}
+
+.questions {
+    background-color: rgba(172, 182, 183, 0.247);
+}

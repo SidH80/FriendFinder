@@ -12,35 +12,35 @@ module.exports = function(app) {
     let matchedFriend = {
       name: "",
       photo: "",
-      friendDifference: 1000
+      friendDifference: 50
     };
 
     let userData = req.body;
     let userName = userData.name;
     let userScores = userData.scores;
 
-    let b = userScores.map(function(item) {
+    let userSum = userScores.map(function(item) {
       return parseInt(item, 10);
     });
 
-    let arrSummed = b.reduce((a, b) => a + b, 0);
+
+
+    let arrSum = userSum.reduce((a, b) => a + b, 0);
+    console.log(arrSum);
 
     for (let i = 0; i < friends.length; i++) {
-      console.log(friends[i].name);
       totalDiff = 0;
-      console.log("Total Diff " + totalDiff);
-      console.log("Best match friend diff " + matchedFriend.friendDifference);
+
       let bfriendScore = friends[i].scores.reduce((a, b) => a + b, 0);
-      console.log("Total friend score " + bfriendScore);
-      totalDiff += Math.abs(arrSummed - bfriendScore);
-      console.log("-------------------------> " + totalDiff);
+      console.log(friends[i].name, friends[i].scores);
+
+      totalDiff += Math.abs(arrSum - bfriendScore);
 
       if (totalDiff <= matchedFriend.friendDifference) {
         matchedFriend.name = friends[i].name;
         matchedFriend.photo = friends[i].photo;
         matchedFriend.friendDifference = totalDiff;
       }
-      console.log(totalDiff + " Total Difference");
     }
     res.json(matchedFriend);
   });

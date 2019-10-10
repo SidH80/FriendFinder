@@ -23,7 +23,7 @@ var friends = [
         {
         "name":"Wayne",
         "photo":"https://randomuser.me/api/portraits/men/56.jpg",
-        "scores":[ 5, 5, 5, 5, 5, 4, 4, 4, 4, 1]
+        "scores":[ 5, 5, 5, 5, 5, 4, 4, 4, 4, 5]
         },
         {
         "name":"Lenny",

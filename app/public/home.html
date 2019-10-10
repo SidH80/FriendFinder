@@ -3,18 +3,80 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
+        <title>FriendFinder</title>
+
+        <!-- Latest compiled and minified CSS & JS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- Font Awesome Glyphicons -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style.css" />
+
+        <style>
+            body {
+                background-color: rgba(80, 169, 183, 0.452);
+                border-radius: 10px;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            h2 {
+                font-size: 50px;
+            }
+
+            .jumbotron {
+                background-color: #FED766
+            }
+
+            .header {
+                background-color: rgba(172, 182, 183, 0.247);
+            }
+
+            .about-you {
+                background-color: rgba(172, 182, 183, 0.247);
+            }
+
+            .questions {
+                background-color: #FED766;
+            }
+
+        </style>
+
     </head>
 
     <body>
-        <h1>Home</h1>
-        <a href="/survey">Survey</a>
 
-        <script>
-            //Front End Java Script
-        </script>
+        <div class="container">
+
+            <div class="jumbotron">
+                <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+                <hr>
+                <h2>Answer some questions</h2>
+                <h2>And find the friend with the greatest compatibility!</h2>
+                <br>
+
+                <div>
+                    <a href="/survey"><button type="button" class="btn btn-lg btn-primary">
+                            <h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4>
+                        </button></a>
+                </div>
+
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/sidh80/friendfinder">GitHub Repo</a></p>
+                </div>
+            </footer>
+
+        </div>
+
+
     </body>
 
 </html>

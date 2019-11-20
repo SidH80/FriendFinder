@@ -5,8 +5,8 @@
 ## Live Site
  - https://sleepy-river-44511.herokuapp.com/
 
- ## Usage 
- ![Screen Shot 2019-10-09 at 8 22 19 PM](https://user-images.githubusercontent.com/52713263/66529920-549bb380-ead3-11e9-9923-a0334434a7e8.png)
+ ## Usage
+ ![Screen Shot 2019-10-09 at 8 22 19 PM](https://user-images.githubusercontent.com/51130585/69213328-bf5bf800-0b31-11ea-808e-c48dbacfbc35.png)
 
  To use the FriendFinder, all you have to do is go to the homepage and fill out a simple survey. FriendFinder will match you with a new best friend! You can also access the Friends API (for purely research-orientated purposes, obviously.)
 

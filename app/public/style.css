@@ -5,6 +5,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.jumbotron {
+    margin-top: 160px;
+}
+
 h2 {
     font-size: 50px;
 }

@@ -35,7 +35,7 @@
 
  ```js
 {
-	name: "Mallory S",
+	name: "Sid H",
 	photo: "https://user-images.githubusercontent.com/52713263/66530107-5d40b980-ead4-11e9-80a1-2f3a91ed02a8.png",
 	scores: [5, 1, 2, 3, 1, 2, 5, 1, 1, 1]
 }
